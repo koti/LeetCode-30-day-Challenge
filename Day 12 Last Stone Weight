@@ -12,7 +12,7 @@ class Solution {
             int stoneOne = maxHeap.remove();
             int stoneTwo = maxHeap.remove();
             
-            if(stoneOne != stoneTwo) {
+            if(stoneOne < stoneTwo) {
                 maxHeap.add(stoneOne - stoneTwo);
             }
         }
